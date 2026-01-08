@@ -46,7 +46,8 @@ namespace LabProject.Shell
         private void RegisterLabs()
         {
             labs.Add(1, new Lab1Control());
-            labs.Add(2, new Lab2Control());
+            labs.Add(2, new AboutMenuItem());
+            labs.Add(3, new Lab3Control());
             // Добавьте остальные лабораторные работы здесь
         }
 
@@ -93,5 +94,6 @@ namespace LabProject.Shell
         // обработчики меню
         private void lab1ToolStripMenuItem_Click(object sender, EventArgs e) => ShowLab(1);
         private void lab2ToolStripMenuItem_Click(object sender, EventArgs e) => ShowLab(2);
+        private void lab3ToolStripMenuItem_Click(object sender, EventArgs e) => ShowLab(3);
     }
 }

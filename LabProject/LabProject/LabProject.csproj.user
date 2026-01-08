@@ -7,6 +7,9 @@
     <Compile Update="Labs\Lab2\Lab2Control.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Labs\Lab3\Lab3Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Shell\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -8,7 +8,7 @@ using System.Xml.Linq;
 
 namespace LabProject.Labs.Lab2
 {
-    partial class Lab2Control
+    partial class AboutMenuItem
     {
         private System.ComponentModel.IContainer components = null;
         private System.Windows.Forms.DataGridView dataGridViewAB;
@@ -58,6 +58,7 @@ namespace LabProject.Labs.Lab2
             generateToolStripMenuItem = new ToolStripMenuItem();
             generateRandomToolStripMenuItem = new ToolStripMenuItem();
             clearToolStripMenuItem = new ToolStripMenuItem();
+            aboutMenuItem2 = new ToolStripMenuItem();
             statusStrip1 = new StatusStrip();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
             toolStripProgressBar1 = new ToolStripProgressBar();
@@ -111,7 +112,7 @@ namespace LabProject.Labs.Lab2
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, solveToolStripMenuItem, generateToolStripMenuItem, clearToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, solveToolStripMenuItem, generateToolStripMenuItem, clearToolStripMenuItem, aboutMenuItem2 });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1374, 28);
@@ -128,21 +129,21 @@ namespace LabProject.Labs.Lab2
             // importFromExcelToolStripMenuItem
             // 
             importFromExcelToolStripMenuItem.Name = "importFromExcelToolStripMenuItem";
-            importFromExcelToolStripMenuItem.Size = new Size(224, 26);
+            importFromExcelToolStripMenuItem.Size = new Size(205, 26);
             importFromExcelToolStripMenuItem.Text = "Импорт из Excel";
             importFromExcelToolStripMenuItem.Click += ImportFromExcelToolStripMenuItem_Click;
             // 
             // exportToExcelToolStripMenuItem
             // 
             exportToExcelToolStripMenuItem.Name = "exportToExcelToolStripMenuItem";
-            exportToExcelToolStripMenuItem.Size = new Size(224, 26);
+            exportToExcelToolStripMenuItem.Size = new Size(205, 26);
             exportToExcelToolStripMenuItem.Text = "Экспорт в Excel";
             exportToExcelToolStripMenuItem.Click += ExportToExcelToolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(224, 26);
+            exitToolStripMenuItem.Size = new Size(205, 26);
             exitToolStripMenuItem.Text = "Выход";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
@@ -195,6 +196,13 @@ namespace LabProject.Labs.Lab2
             clearToolStripMenuItem.Text = "Очистить";
             clearToolStripMenuItem.Click += ClearToolStripMenuItem_Click;
             // 
+            // aboutMenuItem2
+            // 
+            aboutMenuItem2.Name = "aboutMenuItem2";
+            aboutMenuItem2.Size = new Size(81, 24);
+            aboutMenuItem2.Text = "Справка";
+            aboutMenuItem2.Click += aboutMenuItem2_Click;
+            // 
             // statusStrip1
             // 
             statusStrip1.ImageScalingSize = new Size(20, 20);
@@ -217,7 +225,7 @@ namespace LabProject.Labs.Lab2
             toolStripProgressBar1.Size = new Size(100, 18);
             toolStripProgressBar1.Visible = false;
             // 
-            // Lab2Control
+            // AboutMenuItem
             // 
             Controls.Add(statusStrip1);
             Controls.Add(label1);
@@ -225,7 +233,7 @@ namespace LabProject.Labs.Lab2
             Controls.Add(dataGridViewX);
             Controls.Add(dataGridViewAB);
             Controls.Add(menuStrip1);
-            Name = "Lab2Control";
+            Name = "AboutMenuItem";
             Size = new Size(1374, 560);
             Load += Lab2Control_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewAB).EndInit();
@@ -238,5 +246,6 @@ namespace LabProject.Labs.Lab2
             ResumeLayout(false);
             PerformLayout();
         }
+        protected ToolStripMenuItem aboutMenuItem2;
     }
 }

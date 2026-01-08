@@ -11,7 +11,7 @@ using LabProject.Core;
 
 namespace LabProject.Labs.Lab2
 {
-    public partial class Lab2Control : UserControl, ILabModule
+    public partial class AboutMenuItem : UserControl, ILabModule
     {
         private double[]? vectorX;
         public int LabNumber => 2;
@@ -20,7 +20,7 @@ namespace LabProject.Labs.Lab2
         public void OnShow() { }
         public void OnHide() { }
 
-        public Lab2Control()
+        public AboutMenuItem()
         {
             InitializeComponent();
 
@@ -30,11 +30,6 @@ namespace LabProject.Labs.Lab2
             SetupDataGrids();
 
             this.Dock = DockStyle.Fill;
-        }
-
-        private void InitializeLab2Data()
-        {
-
         }
 
         private void SetupDataGrids()
@@ -125,6 +120,8 @@ namespace LabProject.Labs.Lab2
         {
 
         }
+
+
 
         private async void GaussToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -273,6 +270,43 @@ namespace LabProject.Labs.Lab2
         private void Lab2Control_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void aboutMenuItem2_Click(object sender, EventArgs e)
+        {
+            string message = "Численные методы решения систем линейных алгебраических уравнений (СЛАУ)\n\n" +
+                     "В программе реализовано три метода решения СЛАУ вида A∙X + B = 0:\n\n" +
+                     "1. Метод Гаусса:\n" +
+                     "   • Состоит из прямого хода (приведение к треугольному виду) и обратного хода (нахождение решения)\n" +
+                     "   • Обеспечивает высокую точность при условии выбора главного элемента\n" +
+                     "   • Вычислительная сложность: O(n³)\n" +
+                     "   • Устойчив к ошибкам округления при правильной реализации\n\n" +
+                     "2. Метод Жордана-Гаусса:\n" +
+                     "   • Модификация метода Гаусса с полным исключением переменных\n" +
+                     "   • Приводит матрицу к единичной форме за один проход\n" +
+                     "   • Удобен для ручных вычислений\n" +
+                     "   • Обеспечивает непосредственное получение решения\n\n" +
+                     "3. Метод Крамера:\n" +
+                     "   • Использует формулы Крамера с определителями матрицы\n" +
+                     "   • Требует невырожденности матрицы (det(A) ≠ 0)\n" +
+                     "   • Вычислительно затратен для систем высокого порядка\n" +
+                     "   • Предоставляет теоретически точное решение\n\n" +
+                     "Возможности программы:\n" +
+                     "• Импорт данных из Excel\n" +
+                     "• Экспорт результатов в Excel\n" +
+                     "• Генерация случайных данных для тестирования\n" +
+                     "• Визуализация результатов в таблицах\n" +
+                     "• Асинхронное выполнение вычислений с отображением времени\n\n" +
+                     "Ограничения:\n" +
+                     "• Размер матрицы: от 2×2 до 50×50\n" +
+                     "• Все методы требуют невырожденности матрицы коэффициентов\n" +
+                     "• Для метода Крамера система должна иметь единственное решение\n\n" +
+                     "Рекомендации:\n" +
+                     "• Для небольших систем (до 10×10) можно использовать любой метод\n" +
+                     "• Для больших систем рекомендуется метод Гаусса как наиболее эффективный\n" +
+                     "• Метод Крамера для проверки решений и учебных целей";
+
+            MessageBox.Show(message, "Справка", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 

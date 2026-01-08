@@ -16,7 +16,6 @@ C:\Users\User\source\repos\LabProject\LabProject\obj\Debug\net8.0-windows\LabPro
 C:\Users\User\source\repos\LabProject\LabProject\obj\Debug\net8.0-windows\ref\LabProject.dll
 C:\Users\Andrey\source\repos\LabProject\LabProject\obj\Debug\net8.0-windows\LabProject.csproj.AssemblyReference.cache
 C:\Users\Andrey\source\repos\LabProject\LabProject\obj\Debug\net8.0-windows\LabProject.Labs.Lab1Control.resources
-C:\Users\Andrey\source\repos\LabProject\LabProject\obj\Debug\net8.0-windows\LabProject.Labs.Lab2.Lab2Control.resources
 C:\Users\Andrey\source\repos\LabProject\LabProject\obj\Debug\net8.0-windows\LabProject.Shell.MainForm.resources
 C:\Users\Andrey\source\repos\LabProject\LabProject\obj\Debug\net8.0-windows\LabProject.csproj.GenerateResource.cache
 C:\Users\Andrey\source\repos\LabProject\LabProject\obj\Debug\net8.0-windows\LabProject.GeneratedMSBuildEditorConfig.editorconfig
@@ -51,3 +50,5 @@ C:\Users\Andrey\source\repos\LabProject\LabProject\obj\Debug\net8.0-windows\ref\
 C:\Users\Andrey\source\repos\LabProject\LabProject\bin\Debug\net8.0-windows\NCalc.dll
 C:\Users\Andrey\source\repos\LabProject\LabProject\bin\Debug\net8.0-windows\WinForms.DataVisualization.Utilities.dll
 C:\Users\Andrey\source\repos\LabProject\LabProject\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll
+C:\Users\Andrey\source\repos\LabProject\LabProject\obj\Debug\net8.0-windows\LabProject.Labs.Lab3Control.resources
+C:\Users\Andrey\source\repos\LabProject\LabProject\obj\Debug\net8.0-windows\LabProject.Labs.Lab2.AboutMenuItem.resources

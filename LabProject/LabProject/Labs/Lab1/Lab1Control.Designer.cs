@@ -32,10 +32,9 @@ namespace LabProject.Labs
 
         private void InitializeComponent()
         {
-            ChartArea chartArea1 = new ChartArea();
-            Series series1 = new Series();
-            Series series2 = new Series();
-
+            ChartArea chartArea2 = new ChartArea();
+            Series series3 = new Series();
+            Series series4 = new Series();
             txtA = new TextBox();
             txtB = new TextBox();
             txtE = new TextBox();
@@ -49,117 +48,137 @@ namespace LabProject.Labs
             menuStrip1 = new MenuStrip();
             рассчитатьToolStripMenuItem = new ToolStripMenuItem();
             очиститьToolStripMenuItem = new ToolStripMenuItem();
+            aboutMenuItem1 = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)chart).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
-
+            // 
             // txtA
-            txtA.Location = new System.Drawing.Point(57, 30);
+            // 
+            txtA.Location = new Point(57, 30);
             txtA.Name = "txtA";
-            txtA.Size = new System.Drawing.Size(120, 27);
+            txtA.Size = new Size(120, 27);
             txtA.TabIndex = 0;
-
+            // 
             // txtB
-            txtB.Location = new System.Drawing.Point(247, 30);
+            // 
+            txtB.Location = new Point(247, 30);
             txtB.Name = "txtB";
-            txtB.Size = new System.Drawing.Size(120, 27);
+            txtB.Size = new Size(120, 27);
             txtB.TabIndex = 1;
-
+            // 
             // txtE
-            txtE.Location = new System.Drawing.Point(437, 30);
+            // 
+            txtE.Location = new Point(437, 30);
             txtE.Name = "txtE";
-            txtE.Size = new System.Drawing.Size(120, 27);
+            txtE.Size = new Size(120, 27);
             txtE.TabIndex = 2;
-
+            // 
             // txtFunc
-            txtFunc.Location = new System.Drawing.Point(57, 70);
+            // 
+            txtFunc.Location = new Point(57, 70);
             txtFunc.Name = "txtFunc";
-            txtFunc.Size = new System.Drawing.Size(300, 27);
+            txtFunc.Size = new Size(300, 27);
             txtFunc.TabIndex = 3;
-
+            // 
             // lblA
+            // 
             lblA.AutoSize = true;
-            lblA.Location = new System.Drawing.Point(17, 33);
+            lblA.Location = new Point(17, 33);
             lblA.Name = "lblA";
-            lblA.Size = new System.Drawing.Size(20, 20);
+            lblA.Size = new Size(20, 20);
             lblA.TabIndex = 4;
             lblA.Text = "a:";
-
+            // 
             // lblB
+            // 
             lblB.AutoSize = true;
-            lblB.Location = new System.Drawing.Point(212, 33);
+            lblB.Location = new Point(212, 33);
             lblB.Name = "lblB";
-            lblB.Size = new System.Drawing.Size(21, 20);
+            lblB.Size = new Size(21, 20);
             lblB.TabIndex = 5;
             lblB.Text = "b:";
-
+            // 
             // lblE
+            // 
             lblE.AutoSize = true;
-            lblE.Location = new System.Drawing.Point(402, 33);
+            lblE.Location = new Point(402, 33);
             lblE.Name = "lblE";
-            lblE.Size = new System.Drawing.Size(20, 20);
+            lblE.Size = new Size(20, 20);
             lblE.TabIndex = 6;
             lblE.Text = "e:";
-
+            // 
             // lblFunc
+            // 
             lblFunc.AutoSize = true;
-            lblFunc.Location = new System.Drawing.Point(17, 73);
+            lblFunc.Location = new Point(17, 73);
             lblFunc.Name = "lblFunc";
-            lblFunc.Size = new System.Drawing.Size(34, 20);
+            lblFunc.Size = new Size(34, 20);
             lblFunc.TabIndex = 7;
             lblFunc.Text = "f(x):";
-
+            // 
             // lblResult
+            // 
             lblResult.AutoSize = true;
-            lblResult.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            lblResult.Location = new System.Drawing.Point(20, 100);
+            lblResult.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            lblResult.Location = new Point(20, 100);
             lblResult.Name = "lblResult";
-            lblResult.Size = new System.Drawing.Size(93, 23);
+            lblResult.Size = new Size(93, 23);
             lblResult.TabIndex = 10;
             lblResult.Text = "Результат:";
-
+            // 
             // chart
-            chartArea1.Name = "ChartArea1";
-            chart.ChartAreas.Add(chartArea1);
-            chart.Location = new System.Drawing.Point(20, 130);
+            // 
+            chartArea2.Name = "ChartArea1";
+            chart.ChartAreas.Add(chartArea2);
+            chart.Location = new Point(20, 130);
             chart.Name = "chart";
             chart.Palette = ChartColorPalette.SeaGreen;
-            series1.BorderWidth = 2;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = SeriesChartType.Line;
-            series1.Name = "f";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = SeriesChartType.Point;
-            series2.MarkerSize = 10;
-            series2.MarkerStyle = MarkerStyle.Circle;
-            series2.Name = "min";
-            chart.Series.Add(series1);
-            chart.Series.Add(series2);
-            chart.Size = new System.Drawing.Size(740, 400);
+            series3.BorderWidth = 2;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = SeriesChartType.Line;
+            series3.Name = "f";
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = SeriesChartType.Point;
+            series4.MarkerSize = 10;
+            series4.MarkerStyle = MarkerStyle.Circle;
+            series4.Name = "min";
+            chart.Series.Add(series3);
+            chart.Series.Add(series4);
+            chart.Size = new Size(740, 400);
             chart.TabIndex = 11;
-
+            // 
             // menuStrip1
-            menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] {
-            рассчитатьToolStripMenuItem,
-            очиститьToolStripMenuItem});
-            menuStrip1.Location = new System.Drawing.Point(0, 0);
+            // 
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { рассчитатьToolStripMenuItem, очиститьToolStripMenuItem, aboutMenuItem1 });
+            menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new System.Drawing.Size(800, 28);
+            menuStrip1.Size = new Size(800, 28);
             menuStrip1.TabIndex = 12;
             menuStrip1.Text = "menuStrip1";
-
+            // 
             // рассчитатьToolStripMenuItem
+            // 
             рассчитатьToolStripMenuItem.Name = "рассчитатьToolStripMenuItem";
-            рассчитатьToolStripMenuItem.Size = new System.Drawing.Size(98, 24);
+            рассчитатьToolStripMenuItem.Size = new Size(98, 24);
             рассчитатьToolStripMenuItem.Text = "Рассчитать";
-
+            // 
             // очиститьToolStripMenuItem
+            // 
             очиститьToolStripMenuItem.Name = "очиститьToolStripMenuItem";
-            очиститьToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
+            очиститьToolStripMenuItem.Size = new Size(87, 24);
             очиститьToolStripMenuItem.Text = "Очистить";
-
+            // 
+            // aboutMenuItem1
+            // 
+            aboutMenuItem1.Name = "aboutMenuItem1";
+            aboutMenuItem1.Size = new Size(81, 24);
+            aboutMenuItem1.Text = "Справка";
+            aboutMenuItem1.Click += aboutMenuItem1_Click;
+            // 
             // Lab1Control
+            // 
             Controls.Add(chart);
             Controls.Add(lblResult);
             Controls.Add(lblFunc);
@@ -172,12 +191,13 @@ namespace LabProject.Labs
             Controls.Add(txtA);
             Controls.Add(menuStrip1);
             Name = "Lab1Control";
-            Size = new System.Drawing.Size(800, 550);
+            Size = new Size(800, 550);
             ((System.ComponentModel.ISupportInitialize)chart).EndInit();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
+        private ToolStripMenuItem aboutMenuItem1;
     }
 }
