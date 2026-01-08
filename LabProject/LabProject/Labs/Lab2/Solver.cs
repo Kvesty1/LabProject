@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LabProject.Labs.Lab2
+namespace LabProject.Labs
 {
     public static class Solver
     {

@@ -14,6 +14,7 @@ namespace LabProject.Shell
         private ToolStripMenuItem lab1ToolStripMenuItem;
         private ToolStripMenuItem lab2ToolStripMenuItem;
         private ToolStripMenuItem lab3ToolStripMenuItem;
+        private ToolStripMenuItem lab5ToolStripMenuItem;
 
         private void InitializeComponent()
         {
@@ -22,18 +23,21 @@ namespace LabProject.Shell
             lab1ToolStripMenuItem = new ToolStripMenuItem();
             lab2ToolStripMenuItem = new ToolStripMenuItem();
             lab3ToolStripMenuItem = new ToolStripMenuItem();
+            lab5ToolStripMenuItem = new ToolStripMenuItem();
 
             labsToolStripMenuItem.Text = "Лабораторные";
             lab1ToolStripMenuItem.Text = "Лабораторная №1 (Метод дихотомии)";
             lab2ToolStripMenuItem.Text = "Лабораторная №2 (Методы решения СЛАУ)";
             lab3ToolStripMenuItem.Text = "Лабораторная №3 (Метод золотого сечения)";
+            lab5ToolStripMenuItem.Text = "Лабораторная №5 (Вычисление определенного интеграла)";
 
             lab1ToolStripMenuItem.Click += lab1ToolStripMenuItem_Click;
             lab2ToolStripMenuItem.Click += lab2ToolStripMenuItem_Click;
             lab3ToolStripMenuItem.Click += lab3ToolStripMenuItem_Click;
+            lab5ToolStripMenuItem.Click += lab5ToolStripMenuItem_Click;
 
             labsToolStripMenuItem.DropDownItems.AddRange(
-                new ToolStripItem[] { lab1ToolStripMenuItem, lab2ToolStripMenuItem, lab3ToolStripMenuItem });
+                new ToolStripItem[] { lab1ToolStripMenuItem, lab2ToolStripMenuItem, lab3ToolStripMenuItem, lab5ToolStripMenuItem });
 
             menuStrip1.Items.Add(labsToolStripMenuItem);
 

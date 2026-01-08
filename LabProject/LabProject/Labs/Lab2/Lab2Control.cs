@@ -9,9 +9,9 @@ using System.Windows.Forms;
 using System.Drawing;
 using LabProject.Core;
 
-namespace LabProject.Labs.Lab2
+namespace LabProject.Labs
 {
-    public partial class AboutMenuItem : UserControl, ILabModule
+    public partial class Lab2Control : UserControl, ILabModule
     {
         private double[]? vectorX;
         public int LabNumber => 2;
@@ -20,7 +20,7 @@ namespace LabProject.Labs.Lab2
         public void OnShow() { }
         public void OnHide() { }
 
-        public AboutMenuItem()
+        public Lab2Control()
         {
             InitializeComponent();
 

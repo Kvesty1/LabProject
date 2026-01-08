@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 
-namespace LabProject.Labs.Lab2
+namespace LabProject.Labs
 {
-    partial class AboutMenuItem
+    partial class Lab2Control
     {
         private System.ComponentModel.IContainer components = null;
         private System.Windows.Forms.DataGridView dataGridViewAB;

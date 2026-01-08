@@ -10,6 +10,9 @@
     <Compile Update="Labs\Lab3\Lab3Control.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Labs\Lab5\Lab5Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Shell\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

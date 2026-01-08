@@ -1,6 +1,5 @@
 ﻿using LabProject.Core;
 using LabProject.Labs;
-using LabProject.Labs.Lab2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,12 +19,11 @@ namespace LabProject.Shell
         public MainForm()
         {
             InitializeComponent();
-
             // Настройка формы
             StartPosition = FormStartPosition.CenterScreen;
             WindowState = FormWindowState.Maximized;
             MinimumSize = new Size(1000, 700);
-            AutoScaleMode = AutoScaleMode.Dpi; // Лучше чем Font для разных разрешений
+            AutoScaleMode = AutoScaleMode.Dpi;
 
             // Создание статус-бара
             SetupStatusBar();
@@ -46,9 +44,9 @@ namespace LabProject.Shell
         private void RegisterLabs()
         {
             labs.Add(1, new Lab1Control());
-            labs.Add(2, new AboutMenuItem());
+            labs.Add(2, new Lab2Control());
             labs.Add(3, new Lab3Control());
-            // Добавьте остальные лабораторные работы здесь
+            labs.Add(5, new Lab5Control());
         }
 
         public void AddLab(int number, UserControl control)
@@ -79,7 +77,7 @@ namespace LabProject.Shell
             var labControl = labs[number];
             var labModule = labControl as ILabModule;
 
-            labControl.Dock = DockStyle.Fill; // Критично для масштабирования
+            labControl.Dock = DockStyle.Fill;
 
             panelHost.Controls.Add(labControl);
             labModule?.OnShow();
@@ -95,5 +93,6 @@ namespace LabProject.Shell
         private void lab1ToolStripMenuItem_Click(object sender, EventArgs e) => ShowLab(1);
         private void lab2ToolStripMenuItem_Click(object sender, EventArgs e) => ShowLab(2);
         private void lab3ToolStripMenuItem_Click(object sender, EventArgs e) => ShowLab(3);
+        private void lab5ToolStripMenuItem_Click(object sender, EventArgs e) => ShowLab(5);
     }
 }
