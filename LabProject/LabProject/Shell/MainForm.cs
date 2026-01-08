@@ -46,6 +46,7 @@ namespace LabProject.Shell
             labs.Add(1, new Lab1Control());
             labs.Add(2, new Lab2Control());
             labs.Add(3, new Lab3Control());
+            labs.Add(4, new Lab4Control());
             labs.Add(5, new Lab5Control());
         }
 
@@ -93,6 +94,7 @@ namespace LabProject.Shell
         private void lab1ToolStripMenuItem_Click(object sender, EventArgs e) => ShowLab(1);
         private void lab2ToolStripMenuItem_Click(object sender, EventArgs e) => ShowLab(2);
         private void lab3ToolStripMenuItem_Click(object sender, EventArgs e) => ShowLab(3);
+        private void lab4ToolStripMenuItem_Click(object sender, EventArgs e) => ShowLab(4);
         private void lab5ToolStripMenuItem_Click(object sender, EventArgs e) => ShowLab(5);
     }
 }

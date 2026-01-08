@@ -53,3 +53,4 @@ C:\Users\Andrey\source\repos\LabProject\LabProject\bin\Debug\net8.0-windows\WinF
 C:\Users\Andrey\source\repos\LabProject\LabProject\obj\Debug\net8.0-windows\LabProject.Labs.Lab3Control.resources
 C:\Users\Andrey\source\repos\LabProject\LabProject\obj\Debug\net8.0-windows\LabProject.Labs.Lab2Control.resources
 C:\Users\Andrey\source\repos\LabProject\LabProject\obj\Debug\net8.0-windows\LabProject.Labs.Lab5Control.resources
+C:\Users\Andrey\source\repos\LabProject\LabProject\obj\Debug\net8.0-windows\LabProject.Labs.Lab4Control.resources

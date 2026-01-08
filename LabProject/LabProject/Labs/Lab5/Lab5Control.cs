@@ -12,8 +12,6 @@ namespace LabProject.Labs
 {
     public partial class Lab5Control : UserControl, ILabModule
     {
-        private const double GOLDEN_RATIO = 0.61803398874989484820458683436564;
-
         public int LabNumber => 5;
         public string LabTitle => "Лабораторная работа №5: Вычисление определенного интеграла";
 
